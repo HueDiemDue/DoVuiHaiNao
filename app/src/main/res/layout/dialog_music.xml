@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/ic_horizontal"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Cài Đặt"
+            android:padding="15dp"
+            android:layout_toRightOf="@id/imgBack"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tvVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Âm Thanh"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/swVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvVolume"
+            android:textColor="@color/colorPrimaryDark" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvChangeVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Thay đổi âm lượng"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imgMin"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_silent" />
+
+        <SeekBar
+            android:id="@+id/skBarVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgMax"
+            android:layout_toRightOf="@+id/imgMin"
+            />
+
+        <ImageView
+            android:id="@+id/imgMax"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_hight_volume" />
+    </RelativeLayout>
+</LinearLayout>

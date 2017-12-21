@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlvQuestion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_question"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/tvPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imgShare"
+        android:layout_toRightOf="@+id/imgBack"
+        android:padding="10dp"
+        android:text="Point"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorRed" />
+
+    <ImageView
+        android:id="@+id/imgShare"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:src="@drawable/ic_share" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_answer"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:layout_below="@+id/imgBack" />
+
+    <TextView
+        android:id="@+id/tvA"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/tvQuestion"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tab_answer"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:maxLines="2"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tvB"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvQuestion"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:background="@drawable/tab_answer"
+        android:padding="20dp"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tvC"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/tvA"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tab_answer"
+        android:padding="20dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tvD"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvB"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tab_answer"
+        android:padding="20dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>

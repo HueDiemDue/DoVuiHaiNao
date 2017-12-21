@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/ic_horizontal">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ic_laucher"/>
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_dovuihainao" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_bg"
+        android:text="Cay quá! Chiến tiếp đi?"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_button"
+        android:text="Về Menu"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_button"
+        android:text="Quẩy tiếp"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>
